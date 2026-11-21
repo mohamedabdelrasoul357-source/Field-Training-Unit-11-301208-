@@ -1,6 +1,6 @@
 # Field-Training-Unit-11-301208-
 A repository for our field training work and projects
-# Taste & Co. — Field Training Unit 11[span_0](start_span)[span_0](end_span)[span_1](start_span)[span_1](end_span)
+# Taste & Co. — Field Training Unit 11
 
 Restaurant landing page built as a 5-member team project following **Field Training Unit 11** .
 
