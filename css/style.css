@@ -1,1 +1,105 @@
 /* Styling CSS File */
+/* About Section */
+
+.about-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.about-container {
+    width: 85%;
+    margin: auto;
+
+    display: flex;
+    gap: 25px;
+}
+
+.about-card {
+    flex: 1;
+    padding: 25px;
+
+    background-color: #fffaf6;
+    border: 1px solid #f0e8df;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #292522;
+}
+
+.about-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #777;
+}
+
+
+/* Daytime Schedule */
+
+.schedule-banner {
+    min-height: 210px;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.schedule-content h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.schedule-content p {
+    font-size: 16px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .about-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .about-card {
+        width: 100%;
+    }
+
+    .schedule-banner {
+        background-attachment: scroll;
+        padding: 40px 15px;
+    }
+
+    .schedule-content h2 {
+        font-size: 23px;
+    }
+
+    .schedule-content p {
+        font-size: 13px;
+    }
+
+}
