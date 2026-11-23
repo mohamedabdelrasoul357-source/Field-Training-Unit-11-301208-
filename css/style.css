@@ -1,11 +1,11 @@
 #menu {
-    background-color: #222;
-    color: white;
+    background-color: #fff9f4;
+    color: #292524;
     padding: 50px;
     text-align: center;
 }
 #menu h2 {
-    color: goldenrod;
+    color: #292524;
     font-size: 35px;
 }
 .filter-buttons {
@@ -16,11 +16,11 @@
     margin: 5px;
     cursor: pointer;
     background-color: transparent;
-    color: white;
-    border: 1px solid goldenrod;
+    color: #292524;
+    border: 1px solid #e8d8c5;
 }
 .filter-btn.active {
-    background-color: goldenrod;
+    background-color: #d97706;
     color: black;
 }
 .menu-container {
@@ -29,7 +29,7 @@
     gap: 20px;
 }
 .menu-item {
-    background-color: #333;
+    background-color: #ffffff;
     padding: 15px;
     border-radius: 10px;
 }
@@ -39,13 +39,13 @@
     object-fit: cover;
 }
 .menu-item h3 {
-    color: goldenrod;
+    color: #292524;
 }
 .menu-item p {
-    color: #ccc;
+    color: #6b625b;
 }
 .menu-item span {
-    color: goldenrod;
+    color: #9a5b17;
     font-size: 20px;
 }
 .hidden {
