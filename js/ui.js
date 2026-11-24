@@ -3,8 +3,9 @@ export function initMobileMenu() {
   const navLinks = document.querySelector(".nav-links");
   
   if (navLinks && menuToggle) {
-    navLinks.addEventListener("click", function () {
-      menuToggle.classList.toggle("active");
+    menuToggle.addEventListener("click", function () {
+      // Fixed: Toggles 'active' on navLinks so the CSS media query displays it
+      navLinks.classList.toggle("active");
     });
   }
 }
