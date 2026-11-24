@@ -1,4 +1,3 @@
-
 import { initMobileMenu } from "./ui.js";
 
 document.addEventListener("DoMContentLoaded", function () {
@@ -81,3 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
     form.reset();
   });
 });
+import { initGallery } from "./ui.js";
+
+initGallery();
+
