@@ -1,4 +1,4 @@
-/* Styling CSS File */
+
 * {
     margin: 0;
     padding: 0;
@@ -232,5 +232,155 @@ display: flex !important;
 .hidden {
     display: none;
 }
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
+.contact-grid>h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
+#form-container,
+#visit-us {
+    background-color: #ffffff;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+#form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-container label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333333;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+
+#form-container label:first-child {
+    margin-top: 0;
+}
+
+
+#form-container input,
+#form-container textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: #222222;
+    background-color: #fafafa;
+    outline: none;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+#form-container input:focus,
+#form-container textarea:focus {
+    border-color: #e67e00;
+    background-color: #ffffff;
+}
+
+#form-container textarea {
+    resize: vertical;
+}
+
+
+#submit-btn {
+    margin-top: 18px;
+    width: 100%;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e67e00;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+#submit-btn:hover {
+    background-color: #cf7100;
+}
+
+#submit-btn:active {
+    transform: scale(0.99);
+}
+#form-feedback.error {
+  color: #c62828;
+}
+
+#form-feedback.success {
+  color: #2e7d32;
+}
+
+#form-feedback {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    min-height: 20px;
+}
+
+
+#visit-us h2 {
+    margin-bottom: 18px;
+    font-size: 1.5rem;
+}
+
+.Visit-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    color: #555555;
+}
+
+.Visit-info i {
+    color: #e67e00;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #fff3e0;
+    color: #e67e00;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+    background-color: #ffe0b2;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
 

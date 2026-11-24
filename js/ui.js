@@ -1,24 +1,26 @@
-
 export function initMobileMenu() {
 
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-// console.log(menuToggle.className);
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+  navLinks.addEventListener("click", function () {
 
+    menuToggle.classList.toggle("active");
 
-// if(!menuToggle || navLinks){
-//     console.log("llllll");
-//     return;
-    
-// }
+  });
 
+  export function showFormFeedback(feedbackElement, message, type = 'error') {
+    if (!feedbackElement) return;
 
-navLinks.addEventListener("click", function () {
+    feedbackElement.textContent = message;
+    feedbackElement.classList.remove('error', 'success');
 
-menuToggle.classList.toggle("active");
-// console.log(navLinks.classList.contains("active"));
+    if (type === 'error' || type === 'success') {
+      feedbackElement.classList.add(type);
+    }
+  }
+  export function clearFormFeedback(feedbackElement) {
+    if (!feedbackElement) return;
 
-
-});
-
-}
+    feedbackElement.textContent = '';
+    feedbackElement.classList.remove('error', 'success');
+  }
